@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyCRM", "AcademyCRM\AcademyCRM.csproj", "{7711A6C7-F290-4156-ABF2-04AB0695C6BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademyCRM", "AcademyCRM\AcademyCRM.csproj", "{7711A6C7-F290-4156-ABF2-04AB0695C6BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademyCRM.BLL", "AcademyCRM.BLL\AcademyCRM.BLL.csproj", "{5A932891-F9C0-41F2-A5E0-9B59AA3E83B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyCRM.DAL", "AcademyCRM.DAL\AcademyCRM.DAL.csproj", "{328159E9-EC38-4AE5-8CA7-FDF6D29F086C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyCRM.DAL.EF", "AcademyCRM.DAL.EF\AcademyCRM.DAL.EF.csproj", "{67700734-C0A7-4CDA-AA7F-6D9D70ABC0E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{7711A6C7-F290-4156-ABF2-04AB0695C6BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7711A6C7-F290-4156-ABF2-04AB0695C6BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7711A6C7-F290-4156-ABF2-04AB0695C6BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A932891-F9C0-41F2-A5E0-9B59AA3E83B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A932891-F9C0-41F2-A5E0-9B59AA3E83B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A932891-F9C0-41F2-A5E0-9B59AA3E83B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A932891-F9C0-41F2-A5E0-9B59AA3E83B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328159E9-EC38-4AE5-8CA7-FDF6D29F086C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328159E9-EC38-4AE5-8CA7-FDF6D29F086C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328159E9-EC38-4AE5-8CA7-FDF6D29F086C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328159E9-EC38-4AE5-8CA7-FDF6D29F086C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67700734-C0A7-4CDA-AA7F-6D9D70ABC0E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67700734-C0A7-4CDA-AA7F-6D9D70ABC0E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67700734-C0A7-4CDA-AA7F-6D9D70ABC0E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67700734-C0A7-4CDA-AA7F-6D9D70ABC0E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

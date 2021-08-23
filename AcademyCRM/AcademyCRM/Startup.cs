@@ -1,4 +1,3 @@
-using AcademyCRM.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AcademyCRM.DAL.EF.Contexts;
 
 namespace AcademyCRM
 {
@@ -27,19 +27,17 @@ namespace AcademyCRM
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<AcademyContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<AcademyContext>();
+
             services.AddControllersWithViews();
-            services.AddWebOptimizer();
-
-
-
-                services.AddWebOptimizer(pipeline =>
+            services.AddWebOptimizer(pipeline =>
                 {
                     pipeline.MinifyJsFiles("js/adminlite.js", "js/site.js");
                     pipeline.MinifyCssFiles("css/adminlite.css", "css/site.css");
